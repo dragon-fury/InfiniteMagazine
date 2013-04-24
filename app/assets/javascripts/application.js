@@ -17,19 +17,23 @@
 //= require_tree .
 
 $(window).ready(function() {
-	$('#magazine').turn({
-		display: 'double',
+	var mag = $('#magazine');
+	var first_page = 2;
+	var last_page = mag.children().length;
+
+	mag.turn({
 		acceleration: true,
 		gradients: !$.isTouch,
-		elevation:50,
-		when: {
-			turned: function(e, page) {
-				/*console.log('Current view: ', $(this).turn('view'));*/
-			}
-		}
+		elevation: 50
+	});
+
+	mag.bind('turned', function(e, page, pageObj) {
+
+	    if(page == first_page && $(this).data('done')){
+	        mag.addClass('centerStart').removeClass('centerEnd');
+	    }
 	});
 });
-
 
 $(window).bind('keydown', function(e){
 

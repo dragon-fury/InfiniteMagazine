@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>InfiniteMagazine</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="magazine">
+	<head>
+	  <title>InfiniteMagazine</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
 		<%= yield %>
-	</div>
-<ul>
-	<li>The news content is powered by Google News and other RSS feeds.
-	<li>This is application is for demonstration purpose only. 
-	<li>All the art work on cover or any part of the app is not endorced, it belongs to the respective owners.
-</ul>
-</body>
+		<ul>
+			<li>The news content is powered by Google News and other RSS feeds.
+			<li>This is application is for demonstration purpose only. 
+			<li>All the art work on cover or any part of the app is not endorsed, it belongs to the respective owners.
+		</ul>
+	</body>
 </html>
 	

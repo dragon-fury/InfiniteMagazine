@@ -1,5 +1,6 @@
 <div id="magazine">
-	<%= image_tag('/assets/1.jpeg') %>
+	<%= image_tag('/assets/cover.png') %>
+	<%= image_tag('/assets/cover.png') %>
 	<% @feeds.each_slice(2).each_with_index do |feed, index| %>
 		<div class="page-wrapper <%= index.odd? ? 'odd' : 'even' %>" page="<%=index+1%>" style="<%= cycle('left', 'right') %>: 0px; <%= cycle('right', 'left') %>: auto;">
 		   <div class="page-wrapper-page">
@@ -14,5 +15,8 @@
 		   <div class=".end-div"></div>
 		</div>
 	<%end%>
-	<%= image_tag('/assets/6.jpg') %>
+	<%= image_tag('/assets/cover.png') %>
+	<% if (@feeds.size%4) == 0 %>
+		<%= image_tag('/assets/cover.png') %>
+	<%end%>
 </div>
