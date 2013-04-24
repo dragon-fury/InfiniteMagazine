@@ -1,19 +1,16 @@
 == Welcome to Infinite Magazine
 
 It is an attempt to create a web based RSS reader application, 
-which will mimic the experiance of reading a real book with actual 
-page turns, look and feel of a real physical magazine.
-
-Demo of the application can be found in http://infinitemagazine.herokuapp.com/
+which will mimic the experience of reading a real physical magazine.
 
 This application uses turn.js for the real page turns
 
 == Credits
 
-page.js http://visionmedia.github.com/page.js/
-RSS feed by googlenews http://www.google.com/url?sa=t&rct=j&q=google%20news%20rss&source=web&cd=2&ved=0CF0QFjAB&url=http%3A%2F%2Fnews.google.com%2F%3Foutput%3Drss&ei=S14qUJi_Cs-srAeVsIDADg&usg=AFQjCNFrP6iEWJq-jxeIwm9XBlXXiGIG1Q
+page.js http://visionmedia.github.com/page.js  
+RSS feed by news.ycombinator.com/, news.google.com, www.wired.com, news.yahoo.com
 
 == Contact info
 
-dear_srik@yahoo.com
+sesha911@gmail.com
 
