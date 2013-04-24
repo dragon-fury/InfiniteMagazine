@@ -1,0 +1,18 @@
+<div id="magazine">
+	<%= image_tag('/assets/1.jpeg') %>
+	<% @feeds.each_slice(2).each_with_index do |feed, index| %>
+		<div class="page-wrapper <%= index.odd? ? 'odd' : 'even' %>" page="<%=index+1%>" style="<%= cycle('left', 'right') %>: 0px; <%= cycle('right', 'left') %>: auto;">
+		   <div class="page-wrapper-page">
+		      <div class="page p2">
+				<% feed.each do |f| %>
+					<%= link_to f.title.html_safe, f.url%> <br/>
+					<%= f.summary.html_safe%> <br/>
+				<% end %>
+		      </div>
+		   </div>
+		   <div class="gradient"></div>
+		   <div class=".end-div"></div>
+		</div>
+	<%end%>
+	<%= image_tag('/assets/6.jpg') %>
+</div>
